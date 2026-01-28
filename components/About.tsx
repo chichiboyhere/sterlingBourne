@@ -2,36 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-// const team = [
-//   {
-//     name: "Julian Sterling",
-//     role: "Senior Partner",
-//     bio: "FCA with 20 years in forensic audit.",
-//     image: "/managers/julianSterling.jpg",
-//     skills: "Financial Modelling, Risk, Compliance",
-//   },
-//   {
-//     name: "Eleanor Bourne",
-//     role: "Managing Partner",
-//     bio: "Specialist in UK tax legislation.",
-//     image: "/managers/eleanorBourne.jpg",
-//     skills: "",
-//   },
-//   {
-//     name: "Marcus Thorne",
-//     role: "Head of Audit",
-//     bio: "Expert in SME compliance and risk.",
-//     image: "/managers/marcusThorne.jpg",
-//     skills: "",
-//   },
-//   {
-//     name: "Sarah Jenkins",
-//     role: "Tax Advisory Lead",
-//     bio: "Ex-Big Four international tax consultant.",
-//     image: "/managers/sarahJenkins.jpg",
-//     skills: "",
-//   },
-// ];
+
 const team = [
   {
     name: "Julian Sterling",
@@ -86,31 +57,6 @@ export default function About() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member) => (
-            // <div
-            //   key={member.name}
-            //   className="group"
-            //   onClick={() => setActive(member)}
-            // >
-            //   <div className="aspect-square bg-slate-200 mb-4 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-500">
-            //     {/* Image Placeholder */}
-            //     <div className="absolute inset-0 flex items-center justify-center text-slate-400 uppercase tracking-widest text-xs">
-            //       <Image
-            //         src={member.image}
-            //         alt={member.name}
-            //         width={300}
-            //         height={300}
-            //         className="rounded-full mx-auto mb-2"
-            //         data-aos="fade-up"
-            //         data-aos-delay="200"
-            //       />
-            //     </div>
-            //   </div>
-            //   <h3 className="font-bold text-xl">{member.name}</h3>
-            //   <p className="text-amber-700 text-sm font-semibold mb-2 uppercase tracking-wider">
-            //     {member.role}
-            //   </p>
-
-            // </div>
             <div
               key={member.name}
               className="group cursor-pointer border-b border-transparent hover:border-amber-500 transition-all pb-4"
@@ -139,96 +85,7 @@ export default function About() {
             </div>
           ))}
         </div>
-        {/* {active && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4">
-            <div className="bg-white  w-full p-6 rounded-xl flex flex-col sm:flex-row gap-6">
-              <Image
-                src={active.image}
-                alt={active.name}
-                width={350}
-                height={350}
-                className="rounded-lg self-start"
-              />
-              <div className="text-black max-h-75 overflow-y-auto">
-                <h3 className="text-xl font-bold mb-2">{active.name}</h3>
-                <p className="italic mb-2">{active.role}</p>
-                <p className="mb-2">{active.bio}</p>
-                <p className="text-sm text-slate-600">
-                  Skills: {active.skills}
-                </p>
-                <button
-                  onClick={() => setActive(null)}
-                  className="mt-4 bg-red-600 text-white px-4 py-2 rounded"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        )} */}
-        {/* {active && (
-          <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-            <div className="bg-white max-w-4xl w-full p-8 rounded-sm shadow-2xl flex flex-col md:flex-row gap-8 relative">
-              <button
-                onClick={() => setActive(null)}
-                className="absolute top-4 right-4 text-slate-400 hover:text-black transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
 
-              <div className="w-full md:w-1/3">
-                <Image
-                  src={active.image}
-                  alt={active.name}
-                  width={400}
-                  height={500}
-                  className="rounded-sm object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                />
-              </div>
-
-              <div className="flex-1">
-                <h3 className="text-3xl font-serif font-bold text-slate-900">
-                  {active.name}
-                </h3>
-                <p className="text-amber-700 font-medium tracking-widest uppercase text-xs mb-6 border-b pb-2">
-                  {active.role}
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-6 font-light italic">
-                  {active.bio}
-                </p>
-                <div>
-                  <h4 className="text-xs font-bold uppercase text-slate-400 mb-3 tracking-tighter">
-                    Core Competencies
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {active.skills.split(",").map((skill: string) => (
-                      <span
-                        key={skill}
-                        className="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full border border-slate-200"
-                      >
-                        {skill.trim()}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )} */}
         {active && (
           <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-md flex justify-center items-start sm:items-center p-4 z-[100] overflow-y-auto">
             <div className="bg-white w-full max-w-4xl my-8 rounded-sm shadow-2xl relative flex flex-col md:flex-row">

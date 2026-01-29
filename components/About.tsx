@@ -51,7 +51,12 @@ export default function About() {
           <h2 className="text-3xl font-serif font-bold">The Leadership</h2>
           <p className="text-slate-600">
             Decades of collective Big-Four experience, delivered with boutique
-            focus.
+            focus. Sterling &amp; Bourne is a partner of the Big Four.
+            Throughout our history, we have been a trusted advisor to some of
+            the world’s most prestigious clients. With cutting-edge technologies
+            and a deep understanding of the challenges of today’s global
+            economy, Sterling &amp; Bourne is a trusted brand with an impressive
+            track record.
           </p>
         </div>
 

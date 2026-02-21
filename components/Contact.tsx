@@ -43,7 +43,7 @@ export default function Contact() {
                   Enquiries: +44 (0) 20 7946 0123
                 </p>
                 <p className="text-slate-300">
-                  Email: info@sterlingbourne.co.uk
+                  Email: info@sterlingandbourne.com
                 </p>
               </div>
             </div>

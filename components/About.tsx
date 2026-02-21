@@ -8,7 +8,7 @@ const team = [
     name: "Julian Sterling",
     role: "Senior Partner",
     bio: "A Fellow of the Institute of Chartered Accountants (FCA) with over two decades of distinguished service in forensic audit. Julian specializes in the intricate unraveling of fiscal discrepancies and high-stakes corporate investigations, providing expert testimony that stands up to the most rigorous judicial scrutiny.",
-    image: "/managers/julianSterling.jpg",
+    image: "/managers/julianSterling.png",
     skills:
       "Forensic Reconstruction, Quantitative Analysis, Regulatory Liaison, Litigation Support",
   },

@@ -35,9 +35,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <span className="font-bold text-yellow-400">
-            +44 (0) 20 7946 0123
-          </span>
+          <span className="font-bold text-yellow-400">+44-745-740-9660</span>
         </div>
 
         <div className="md:hidden flex items-center gap-3">
@@ -60,7 +58,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <span className="font-bold text-yellow-400">+44 20 7946 0912</span>
+          <span className="font-bold text-yellow-400">+44-745-740-9660</span>
         </nav>
       )}
     </header>

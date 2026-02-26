@@ -24,7 +24,7 @@ const team = [
     name: "Marcus Thorne",
     role: "Head of Audit",
     bio: "Marcus commands our audit division with an uncompromising commitment to transparency and precision. His expertise lies in mitigating operational risk for SMEs and mid-market enterprises, transforming the audit process from a statutory requirement into a vehicle for institutional value and robust corporate governance.",
-    image: "/managers/marcusThorne.jpg",
+    image: "/managers/marcusThorne.png",
     skills:
       "Assurance Engagements, Internal Control Optimization, Risk Apprehension, GAAP/IFRS Reporting",
   },

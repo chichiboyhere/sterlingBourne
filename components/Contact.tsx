@@ -39,9 +39,7 @@ export default function Contact() {
                 <h4 className="text-amber-500 uppercase tracking-widest text-sm font-bold mb-2">
                   Direct Lines
                 </h4>
-                <p className="text-slate-300">
-                  Enquiries: +44 (0) 20 7946 0234
-                </p>
+                <p className="text-slate-300">Enquiries: +44-745-740-9660</p>
                 <p className="text-slate-300">
                   Email: info@sterlingandbourne.com
                 </p>
@@ -51,7 +49,11 @@ export default function Contact() {
 
           {/* Right: Lead Form */}
           <div className="bg-white p-8 rounded-sm shadow-2xl">
-            <form className="space-y-6 text-slate-900">
+            <form
+              className="space-y-6 text-slate-900"
+              action="https://formspree.io/f/mnjbwylo"
+              method="POST"
+            >
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-bold uppercase mb-2">
@@ -59,6 +61,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="full_name"
                     className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none transition-colors"
                     placeholder="Julian Sterling"
                   />
@@ -69,6 +72,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="company"
                     className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none transition-colors"
                     placeholder="Enter Company"
                   />
@@ -81,6 +85,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none transition-colors"
                   placeholder="email@company.co.uk"
                 />
@@ -90,7 +95,10 @@ export default function Contact() {
                 <label className="block text-xs font-bold uppercase mb-2">
                   Service Required
                 </label>
-                <select className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none bg-transparent">
+                <select
+                  className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none bg-transparent"
+                  name="service"
+                >
                   <option>Statutory Audit</option>
                   <option>Tax Strategy</option>
                   <option>M&A Advisory</option>
@@ -104,12 +112,16 @@ export default function Contact() {
                 </label>
                 <textarea
                   rows={4}
+                  name="message"
                   className="w-full border-b-2 border-slate-200 p-2 focus:border-amber-500 outline-none transition-colors resize-none"
                   placeholder="Briefly describe your requirements..."
                 ></textarea>
               </div>
 
-              <button className="w-full bg-slate-900 text-amber-400 font-bold py-4 uppercase tracking-widest hover:bg-slate-800 transition-all">
+              <button
+                className="w-full bg-slate-900 text-amber-400 font-bold py-4 uppercase tracking-widest hover:bg-slate-800 transition-all"
+                type="submit"
+              >
                 Request Callback
               </button>
             </form>

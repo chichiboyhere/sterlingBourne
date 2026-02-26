@@ -51,7 +51,7 @@ export default function Contact() {
           <div className="bg-white p-8 rounded-sm shadow-2xl">
             <form
               className="space-y-6 text-slate-900"
-              action="https://formspree.io/f/mnjbwylo"
+              action="https://formspree.io/f/xqednvan"
               method="POST"
             >
               <div className="grid md:grid-cols-2 gap-6">

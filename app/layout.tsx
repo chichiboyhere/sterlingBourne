@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sterling & Bourne | Audit & Advisory",
-  description: "UK-based auditing firm. ",
+  description: "UK-based auditing firm. Specialising in audit and advisory.",
 };
 
 export default function RootLayout({
